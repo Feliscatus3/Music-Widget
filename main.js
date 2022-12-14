@@ -1,10 +1,4 @@
-main.js
-Tahun lalu
-22 Mei 2021
 
-Dev Ideas mengupload satu item
-JavaScript
-main.js
 let btn = document.querySelectorAll('.song #play_btn');
 let song = document.querySelectorAll('#music');
 
@@ -190,8 +184,8 @@ function play_song(){
   wave_animation.style.opacity = '1';
   p_m_player.style.transform = 'translateY(0%)';
 
-  song_img.innerHTML = `<img src="${All_song[index_no].img}" />`;
-  playing_img.innerHTML = `<img src="${All_song[index_no].img}" />`;
+  song_img.innerHTML = '<img src="${All_song[index_no].img}"/>';
+  playing_img.innerHTML = '<img src="${All_song[index_no].img}"/>';
 
   song_name.innerHTML = All_song[index_no].name;
   artist_name.innerHTML = All_song[index_no].singer;
