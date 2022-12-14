@@ -1,47 +1,16 @@
-song_list.js
-Tahun lalu
-22 Mei 2021
-
-Dev Ideas mengupload satu item
-JavaScript
-song_list.js
 //song list
 let All_song = [
    {
-     name: "Make Me Move",
-     path: "music/1.mp3",
-     img: "images/1.jpg",
-     singer: "NoCopyrightSounds [NCS]"
+     name: "暁光 - Half time Old",
+     path: "https://raw.githubusercontent.com/agrihajrian/hs/master/01.%E6%9A%81%E5%85%89.mp3",
+     img: "https://hikarinoakari.com/wp-content/uploads/nuevo/2022/07/600x600bb-34.jpg",
+     singer: "Opening Theme Hosi no Samidare"
    },
    {
-     name: "Beauz & Jvna - Crazy",
-     path: "music/2.mp3",
-     img: "images/2.jpg",
-     singer: "NoCopyrightSounds"
-   },
-   {
-     name: "Skydive -Loxbeats",
-     path: "music/3.mp3",
-     img: "images/3.jpg",
-     singer: "Audio Library"
-   },
-   {
-     name: "Shahed -Indian Fusion",
-     path: "music/4.mp3",
-     img: "images/4.jpg",
-     singer: "imshahed"
-   },
-   {
-     name: "Syn Cole - Feel Good",
-     path: "music/5.mp3",
-     img: "images/5.jpg",
-     singer: "NoCopyrightSounds"
-   },
-   {
-    name: "Yusuf Alev - Yoros",
-    path: "music/6.mp3",
-    img: "images/1.jpg",
-    singer: "Magic Free Release"
+     name: "Natsuyume Noisy - Asaka",
+     path: "https://raw.githubusercontent.com/agrihajrian/hs/master/01.%E5%A4%8F%E5%A4%A2%E3%83%8E%E3%82%A4%E3%82%B8%E3%83%BC.mp3",
+     img: "https://hikarinoakari.com/wp-content/uploads/nuevo/2022/08/CV239.jpg",
+     singer: "Opening Theme Summertime Render"
    }
 ];
 /*you can add more song & images from you computer*/
@@ -53,7 +22,7 @@ let tracks = document.querySelector('.tracks');
 //creating a list or generating Html
 for (let i = 0; i < All_song.length; i++) {
 
-  let Html = ` <div class="song">
+  let Html = '<div class="song">
       <div class="img">
       <img src="${All_song[i].img}"/>
       </div>
@@ -65,7 +34,7 @@ for (let i = 0; i < All_song.length; i++) {
       </div>
       <button id="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
       </div>
-    </div>`;
+    </div>';
 
   tracks.insertAdjacentHTML("beforeend", Html);
 };
